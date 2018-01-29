@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+  int *num;
+  int n;
+  int max = 0, min = 0;
+  int sum = 0;
+
+  cin >> n;
+  num = new int[n];
+  
+  for(int i = 0; i < n; i++){
+    cin >> num[i];
+    sum += num[i];
+  }
+
+  {
+    if(num[i] < num[i-1]){
+      min = num[i];
+      max = num[i-1];
+    } else {
+      min = num[i-1];
+      max = num[i];
+    }
+  }
+
+  cout << min << " " << max << " " << sum << endl;
+
+  delete [] num;
+  
+  return 0;
+}

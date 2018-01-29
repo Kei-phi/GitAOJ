@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+#define data 1024
+
+int main(){
+
+  int a[data], b[data];
+  char op[data];
+
+  int counter = 0;
+
+  do{
+    cin >> a[counter];
+    cin >> op[counter];
+    cin >> b[counter];
+
+    
+  } while()
+  
+}

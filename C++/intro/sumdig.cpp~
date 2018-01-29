@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+#define input 1024
+
+int sumdig(int);
+
+int main(){
+  int num[input];
+  int ans[input];
+  int i = 0;
+  
+  while(cin >> num[i] != 0){
+    ans[i] = sumdig(num[i]);
+  }
+
+  for(int j = 0; j < i; j++){
+    cout << ans[j] << endl;
+  }
+
+  return 0;
+}

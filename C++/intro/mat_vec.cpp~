@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+  int M[][];
+  int i, j;
+
+  cin >> i;
+  cin >> j;
+
+  M = new int[i][j];
+  
+  for(int k = 0; k < i; i++){
+    for(int l = 0; l < j; l++){
+      cin >> M[k][l];
+    }
+  }
+
+  int vec[j];
+  for(int k = 0; k < j; k++){
+    cin >> vec[k];
+  }
+
+  for(int k = 0; k < i; i++){
+    cout << for(int l = 0; l < j; l++){int ans = 0; ans += a[k][l] * vec[l]} << endl;
+  }
+
+  return 0;
+}
